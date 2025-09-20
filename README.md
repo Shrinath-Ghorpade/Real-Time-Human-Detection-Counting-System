@@ -1,19 +1,19 @@
-# 👀 Real-Time Human Detection & Counting System  
+#  Real-Time Human Detection & Counting System  
 
 This project is a **Flask-based web application** that detects and counts humans in **images, videos, and live camera feed** using **OpenCV’s HOG + SVM** algorithm.  
 
 ---
 
-## 📌 Features  
-- ✅ Upload an image and detect humans.  
-- ✅ Upload a video and detect humans frame by frame.  
-- ✅ Open camera for real-time human detection & counting.  
-- ✅ Web interface with Flask (HTML + CSS).  
-- ✅ Processed results are displayed with bounding boxes & counts.  
+##  Features  
+-  Upload an image and detect humans.  
+-  Upload a video and detect humans frame by frame.  
+-  Open camera for real-time human detection & counting.  
+-  Web interface with Flask (HTML + CSS).  
+-  Processed results are displayed with bounding boxes & counts.  
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Backend**: Python, Flask  
 - **Computer Vision**: OpenCV (HOG + SVM), imutils  
 - **Frontend**: HTML, CSS  
@@ -21,7 +21,7 @@ This project is a **Flask-based web application** that detects and counts humans
 
 ---
 
-## 📂 Project Structure  
+##  Project Structure  
   
 ```
 RealTime-Human-Detection/
@@ -40,7 +40,7 @@ RealTime-Human-Detection/
 │   └── result.html     # Result display page  
 ```
 
-## ⚙️ Installation
+##  Installation
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/YOUR_USERNAME/RealTime-Human-Detection.git
