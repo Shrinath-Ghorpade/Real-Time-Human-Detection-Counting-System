@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>👀 Human Detection System</h1>
+    <p class="subtitle">Upload an image, video, or use your camera to detect humans.</p>
+
+    <!-- Image Upload -->
+    <div class="upload-card">
+      <h2>📂 Upload Image</h2>
+      <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect Image</button>
+      </form>
+    </div>
+
+    <!-- Video Upload -->
+    <div class="upload-card">
+      <h2>🎥 Upload Video</h2>
+      <form action="{{ url_for('upload_video') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Detect Video</button>
+      </form>
+    </div>
+
+    <!-- Camera Option -->
+    <div class="upload-card">
+      <h2>📷 Use Camera</h2>
+      <a href="{{ url_for('camera') }}" class="btn">Open Camera</a>
+    </div>
+  </div>
+</body>
+</html>

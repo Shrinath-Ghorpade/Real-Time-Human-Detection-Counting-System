@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Upload Card */
+.upload-card {
+  background: #f9f9f9;
+  padding: 25px;
+  border: 2px dashed #bbb;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.upload-card:hover {
+  border-color: #007BFF;
+  background: #f1faff;
+}
+
+.upload-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007BFF;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.upload-label input {
+  display: none;
+}
+
+/* Buttons */
+button, .btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .btn:hover {
+  background: #0056b3;
+}
+
+/* Result Grid */
+.result-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Card */
+.card {
+  background: #fafafa;
+  flex: 1 1 100%;   /* Make card take full width by default */
+  max-width: 800px; /* Limit card max width */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+/* Card Image */
+.card img {
+  width: 65%;        /* Fill the card width */
+  height: auto;       /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

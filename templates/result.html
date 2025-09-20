@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detection Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>✅ Detection Completed</h1>
+    <p class="subtitle">Here are the results of your uploaded image:</p>
+
+    <div class="result-grid">
+      <div class="card">
+        <h2>📸 Original</h2>
+        <img src="{{ uploaded_image }}" alt="Uploaded Image">
+      </div>
+
+      <div class="card">
+        <h2>🧍 Processed</h2>
+        <img src="{{ result_image }}" alt="Result Image">
+      </div>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="btn">🔄 Try Another</a>
+  </div>
+
+
+
+</body>
+</html>
